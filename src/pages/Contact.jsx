@@ -19,7 +19,7 @@ const Contact = () => {
     'Cervical Health & Posture Sessions',
     'HIIT for Teams',
     'Stress Management Workshops',
-    'Nutrition Planning',
+    'Nutrition Plannings',
     'Fitness Challenges',
     'Custom Program'
   ];
