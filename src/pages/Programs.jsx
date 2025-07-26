@@ -9,7 +9,7 @@ const Programs = () => {
     {
       id: 1,
       title: 'CPR Certification',
-      description: 'Life-saving skills for your entire team. Comprehensive training in cardiopulmonary resuscitation techniques.',
+      description: 'Life-saving skills for your entire team. Comprehensive training in the cardiopulmonary resuscitation techniques.',
       longDescription: 'Our CPR Certification program provides comprehensive training in life-saving techniques. Participants learn proper chest compressions, rescue breathing, and how to use automated external defibrillators (AEDs). This program is essential for workplace safety and can potentially save lives in emergency situations.',
       icon: Heart,
       duration: '4 hours',
