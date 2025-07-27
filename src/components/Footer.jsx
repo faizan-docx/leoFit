@@ -36,7 +36,7 @@ const Footer = () => {
               transition={{ duration: 0.6 }}
               className="mb-6"
             >
-              <div className="text-2xl font-bold bg-gradient-to-r from-primary-600 via-secondary-600 to-accent-600 bg-clip-text text-transparent mb-4">
+              <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500 bg-clip-text text-transparent mb-4">
                 LeoFit Corporate
               </div>
               <p className="text-gray-300 mb-6 max-w-md">
@@ -58,7 +58,7 @@ const Footer = () => {
                   href={social.href}
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-10 h-10 bg-gradient-to-r from-primary-600 to-secondary-700 text-white rounded-full flex items-center justify-center hover:shadow-lg hover:shadow-primary-500/25 transition-all duration-300"
+                  className="w-10 h-10 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full flex items-center justify-center hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300"
                   style={{ transitionDelay: `${index * 100}ms` }}
                   aria-label={social.label}
                 >
@@ -85,7 +85,7 @@ const Footer = () => {
                 >
                   <Link
                     to={link.path}
-                    className="text-gray-300 hover:text-primary-400 transition-colors duration-300 hover:translate-x-1 inline-block"
+                    className="text-gray-300 hover:text-purple-400 transition-colors duration-300 hover:translate-x-1 inline-block"
                   >
                     {link.label}
                   </Link>
@@ -108,7 +108,7 @@ const Footer = () => {
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.3, delay: index * 0.1 }}
-                  className="flex items-center space-x-3 text-gray-300 hover:text-primary-400 transition-colors duration-300"
+                  className="flex items-center space-x-3 text-gray-300 hover:text-purple-400 transition-colors duration-300"
                 >
                   <contact.icon className="w-4 h-4 flex-shrink-0" />
                   <span className="text-sm">{contact.text}</span>

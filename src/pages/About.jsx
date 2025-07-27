@@ -120,9 +120,9 @@ const About = () => {
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
               About{' '}
-                          <span className="bg-gradient-to-r from-primary-600 to-secondary-700 bg-clip-text text-transparent">
-              LeoFit Corporate
-            </span>
+              <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                LeoFit Corporate
+              </span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               Revolutionizing workplace wellness through innovative programs and expert guidance. 
@@ -158,10 +158,10 @@ const About = () => {
             </motion.div>
             
             <motion.div variants={itemVariants} className="relative">
-              <div className="aspect-square bg-gradient-to-br from-primary-600 via-secondary-600 to-accent-600 rounded-2xl p-1 hover:scale-105 transition-transform duration-500">
+              <div className="aspect-square bg-gradient-to-br from-purple-600 via-pink-500 to-orange-500 rounded-2xl p-1 hover:scale-105 transition-transform duration-500">
                 <div className="w-full h-full rounded-2xl bg-white dark:bg-gray-800 flex items-center justify-center">
                   <div className="text-center">
-                    <Heart className="w-24 h-24 mx-auto mb-4 text-primary-500" />
+                    <Heart className="w-24 h-24 mx-auto mb-4 text-pink-500" />
                     <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
                       Wellness First
                     </h3>
@@ -188,7 +188,7 @@ const About = () => {
           >
             <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">
               Our Core{' '}
-              <span className="bg-gradient-to-r from-primary-600 to-secondary-700 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                 Values
               </span>
             </h2>
@@ -208,7 +208,7 @@ const About = () => {
                 whileHover={{ y: -10, scale: 1.02 }}
                 className="text-center p-6 rounded-2xl bg-gray-50 dark:bg-gray-800 hover:shadow-xl transition-all duration-500"
               >
-                <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-primary-600 to-secondary-700 rounded-full mx-auto mb-4">
+                <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full mx-auto mb-4">
                   <value.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">
@@ -234,16 +234,16 @@ const About = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">
-                          Our{' '}
-            <span className="bg-gradient-to-r from-primary-600 to-secondary-700 bg-clip-text text-transparent">
-              Journey
-            </span>
+              Our{' '}
+              <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                Journey
+              </span>
             </h2>
           </motion.div>
 
           <div className="relative">
             {/* Timeline Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-primary-600 to-secondary-700 h-full"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-purple-600 to-pink-600 h-full"></div>
             
             <motion.div
               variants={containerVariants}
@@ -265,10 +265,10 @@ const About = () => {
                       whileHover={{ scale: 1.05 }}
                       className="p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 bg-white dark:bg-gray-700"
                     >
-                      <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-primary-600 to-secondary-700 rounded-full mb-4 mx-auto">
+                      <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full mb-4 mx-auto">
                         <milestone.icon className="w-6 h-6 text-white" />
                       </div>
-                      <div className="text-2xl font-bold bg-gradient-to-r from-primary-600 to-secondary-700 bg-clip-text text-transparent mb-2">
+                      <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">
                         {milestone.year}
                       </div>
                       <h4 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
@@ -281,7 +281,7 @@ const About = () => {
                   </div>
                   
                   {/* Timeline Dot */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-r from-primary-600 to-secondary-700 rounded-full shadow-lg"></div>
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full shadow-lg"></div>
                 </motion.div>
               ))}
             </motion.div>
@@ -301,7 +301,7 @@ const About = () => {
           >
             <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">
               Meet Our{' '}
-              <span className="bg-gradient-to-r from-primary-600 to-secondary-700 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                 Team
               </span>
             </h2>
@@ -326,7 +326,7 @@ const About = () => {
                 className="text-center group"
               >
                 <div className="relative mb-6">
-                  <div className="w-48 h-48 mx-auto rounded-full overflow-hidden bg-gradient-to-br from-primary-600 via-secondary-600 to-accent-600 p-1">
+                  <div className="w-48 h-48 mx-auto rounded-full overflow-hidden bg-gradient-to-br from-purple-600 via-pink-500 to-orange-500 p-1">
                     <img
                       src={member.image}
                       alt={member.name}
@@ -334,7 +334,7 @@ const About = () => {
                     />
                   </div>
                   <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
-                    <div className="w-8 h-8 bg-gradient-to-r from-primary-600 to-secondary-700 rounded-full flex items-center justify-center">
+                    <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center">
                       <Star className="w-4 h-4 text-white" />
                     </div>
                   </div>
@@ -343,7 +343,7 @@ const About = () => {
                 <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">
                   {member.name}
                 </h3>
-                <p className="text-primary-600 dark:text-primary-400 font-semibold mb-3">
+                <p className="text-purple-600 dark:text-purple-400 font-semibold mb-3">
                   {member.role}
                 </p>
                 <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
@@ -351,10 +351,10 @@ const About = () => {
                 </p>
                 
                 <div className="flex justify-center space-x-3">
-                  <a href={member.social.linkedin} className="w-8 h-8 bg-gray-200 dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary-600 hover:text-white transition-colors duration-300">
+                  <a href={member.social.linkedin} className="w-8 h-8 bg-gray-200 dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-purple-600 hover:text-white transition-colors duration-300">
                     <span className="text-xs font-bold">in</span>
                   </a>
-                  <a href={member.social.twitter} className="w-8 h-8 bg-gray-200 dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary-600 hover:text-white transition-colors duration-300">
+                  <a href={member.social.twitter} className="w-8 h-8 bg-gray-200 dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-purple-600 hover:text-white transition-colors duration-300">
                     <span className="text-xs font-bold">t</span>
                   </a>
                 </div>

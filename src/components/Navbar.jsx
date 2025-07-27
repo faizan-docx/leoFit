@@ -61,7 +61,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="text-2xl font-bold bg-gradient-to-r from-primary-600 via-secondary-600 to-accent-600 bg-clip-text text-transparent"
+              className="text-2xl font-bold bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500 bg-clip-text text-transparent"
             >
               LeoFit Corporate
             </motion.div>
@@ -75,15 +75,15 @@ const Navbar = () => {
                 to={item.path}
                 className={`relative font-medium transition-all duration-300 hover:scale-105 ${
                   location.pathname === item.path
-                    ? 'text-primary-600 dark:text-primary-400'
-                    : 'text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400'
+                    ? 'text-purple-600 dark:text-purple-400'
+                    : 'text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400'
                 }`}
               >
                 {item.label}
                 {location.pathname === item.path && (
                   <motion.div
                     layoutId="activeTab"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-primary-600 to-secondary-600"
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-600 to-pink-500"
                     initial={false}
                     transition={{ type: "spring", stiffness: 500, damping: 30 }}
                   />
@@ -145,7 +145,7 @@ const Navbar = () => {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={`block px-3 py-2 rounded-lg transition-all duration-300 ${
                       location.pathname === item.path
-                        ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20'
+                        ? 'text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/20'
                         : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
                     }`}
                   >

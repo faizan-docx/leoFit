@@ -19,7 +19,7 @@ const Contact = () => {
     'Cervical Health & Posture Sessions',
     'HIIT for Teams',
     'Stress Management Workshops',
-    'Nutrition Plannings',
+    'Nutrition Planning',
     'Fitness Challenges',
     'Custom Program'
   ];
@@ -126,10 +126,10 @@ const Contact = () => {
             className="text-center mb-16"
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
-                          Get In{' '}
-            <span className="bg-gradient-to-r from-primary-600 to-secondary-700 bg-clip-text text-transparent">
-              Touch
-            </span>
+              Get In{' '}
+              <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                Touch
+              </span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               Ready to transform your workplace wellness? Let's start the conversation 
@@ -178,7 +178,7 @@ const Contact = () => {
                         style={{
                           top: formData.name ? '-0.5rem' : '0.75rem',
                           fontSize: formData.name ? '0.875rem' : '1rem',
-                          color: formData.name ? '#0ea5e9' : undefined
+                          color: formData.name ? '#8b5cf6' : undefined
                         }}
                       >
                         Full Name *
@@ -201,7 +201,7 @@ const Contact = () => {
                         style={{
                           top: formData.email ? '-0.5rem' : '0.75rem',
                           fontSize: formData.email ? '0.875rem' : '1rem',
-                          color: formData.email ? '#0ea5e9' : undefined
+                          color: formData.email ? '#8b5cf6' : undefined
                         }}
                       >
                         Email Address *
@@ -226,7 +226,7 @@ const Contact = () => {
                         style={{
                           top: formData.company ? '-0.5rem' : '0.75rem',
                           fontSize: formData.company ? '0.875rem' : '1rem',
-                          color: formData.company ? '#0ea5e9' : undefined
+                          color: formData.company ? '#8b5cf6' : undefined
                         }}
                       >
                         Company Name *
@@ -248,7 +248,7 @@ const Contact = () => {
                         style={{
                           top: formData.phone ? '-0.5rem' : '0.75rem',
                           fontSize: formData.phone ? '0.875rem' : '1rem',
-                          color: formData.phone ? '#0ea5e9' : undefined
+                          color: formData.phone ? '#8b5cf6' : undefined
                         }}
                       >
                         Phone Number
@@ -301,7 +301,7 @@ const Contact = () => {
                     disabled={isSubmitting || isSubmitted}
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="w-full py-4 bg-gradient-to-r from-primary-600 to-secondary-700 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-primary-500/25 transition-all duration-500 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+                    className="w-full py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-500 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
                   >
                     {isSubmitting ? (
                       <>
@@ -345,7 +345,7 @@ const Contact = () => {
                       transition={{ duration: 0.3, delay: index * 0.1 }}
                       className="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-300"
                     >
-                      <div className="flex-shrink-0 p-3 bg-gradient-to-r from-primary-600 to-secondary-700 text-white rounded-lg">
+                      <div className="flex-shrink-0 p-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg">
                         <contact.icon className="w-6 h-6" />
                       </div>
                       <div>

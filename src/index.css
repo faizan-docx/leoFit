@@ -20,12 +20,12 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #0ea5e9, #64748b);
+  background: linear-gradient(to bottom, #8b5cf6, #ec4899);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #0284c7, #475569);
+  background: linear-gradient(to bottom, #7c3aed, #db2777);
 }
 
 .dark ::-webkit-scrollbar-track {
@@ -34,7 +34,7 @@ html {
 
 /* Focus styles for accessibility */
 *:focus {
-  outline: 2px solid #0ea5e9;
+  outline: 2px solid #8b5cf6;
   outline-offset: 2px;
 }
 
@@ -69,14 +69,14 @@ html {
 
 /* Custom button hover effects */
 .btn-gradient {
-  background: linear-gradient(135deg, #0ea5e9 0%, #64748b 100%);
+  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
   transition: all 0.3s ease;
 }
 
 .btn-gradient:hover {
-  background: linear-gradient(135deg, #0284c7 0%, #475569 100%);
+  background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(14, 165, 233, 0.3);
+  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
 }
 
 /* Card hover effects */
@@ -100,13 +100,13 @@ html {
 
 .input-focus:focus {
   transform: scale(1.02);
-  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
 }
 
 /* Loading spinner */
 .spinner {
   border: 2px solid #f3f4f6;
-  border-top: 2px solid #0ea5e9;
+  border-top: 2px solid #8b5cf6;
   border-radius: 50%;
   width: 20px;
   height: 20px;

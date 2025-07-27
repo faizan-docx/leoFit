@@ -128,9 +128,9 @@ const Testimonials = () => {
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
               What Our{' '}
-                          <span className="bg-gradient-to-r from-primary-600 to-secondary-700 bg-clip-text text-transparent">
-              Clients Say
-            </span>
+              <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                Clients Say
+              </span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               Trusted by industry leaders for exceptional wellness programs. 
@@ -160,7 +160,7 @@ const Testimonials = () => {
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary-600 to-secondary-700 bg-clip-text text-transparent mb-2"
+                  className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2"
                 >
                   {stat.number}
                 </motion.div>
@@ -280,7 +280,7 @@ const Testimonials = () => {
                   onClick={() => goToTestimonial(index)}
                   className={`w-3 h-3 rounded-full transition-all duration-500 ${
                     currentTestimonial === index
-                      ? 'bg-gradient-to-r from-primary-600 to-secondary-700 w-8'
+                      ? 'bg-gradient-to-r from-purple-600 to-pink-600 w-8'
                       : 'bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500'
                   }`}
                 />
@@ -301,10 +301,10 @@ const Testimonials = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">
-                          Trusted by Leading{' '}
-            <span className="bg-gradient-to-r from-primary-600 to-secondary-700 bg-clip-text text-transparent">
-              Companies
-            </span>
+              Trusted by Leading{' '}
+              <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                Companies
+              </span>
             </h2>
           </motion.div>
 
@@ -342,7 +342,7 @@ const Testimonials = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary-600 to-secondary-700">
+      <section className="py-20 bg-gradient-to-r from-purple-600 to-pink-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -360,7 +360,7 @@ const Testimonials = () => {
             <motion.button
               whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(0, 0, 0, 0.3)" }}
               whileTap={{ scale: 0.95 }}
-                              className="px-8 py-4 text-lg font-semibold text-primary-600 bg-white rounded-full hover:shadow-2xl transition-all duration-500"
+              className="px-8 py-4 text-lg font-semibold text-purple-600 bg-white rounded-full hover:shadow-2xl transition-all duration-500"
             >
               Start Your Journey Today
             </motion.button>

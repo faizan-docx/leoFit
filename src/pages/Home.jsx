@@ -71,8 +71,8 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Animated Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-600 via-secondary-700 to-accent-600">
-          <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-600 via-pink-500 to-orange-500">
+          <div className="absolute inset-0 bg-black/20"></div>
           {/* Floating Shapes */}
           <div className="absolute inset-0">
             {[...Array(6)].map((_, i) => (
@@ -108,7 +108,7 @@ const Home = () => {
             className="text-5xl md:text-7xl font-bold text-white mb-6"
           >
             Empower Your Workforce with{' '}
-            <span className="bg-gradient-to-r from-accent-400 to-primary-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
               Corporate Wellness
             </span>
           </motion.h1>
@@ -132,13 +132,13 @@ const Home = () => {
               <motion.button
                 whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(147, 51, 234, 0.3)" }}
                 whileTap={{ scale: 0.95 }}
-                className="group relative px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-primary-600 to-secondary-700 rounded-full hover:shadow-2xl transition-all duration-500"
+                className="group relative px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-purple-600 to-pink-600 rounded-full hover:shadow-2xl transition-all duration-500"
               >
                 <span className="relative z-10 flex items-center">
                   Explore Programs
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-secondary-700 to-accent-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-orange-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </motion.button>
             </Link>
             
@@ -195,7 +195,7 @@ const Home = () => {
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary-600 to-secondary-700 bg-clip-text text-transparent mb-2"
+                  className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2"
                 >
                   {stat.number}
                 </motion.div>
@@ -220,7 +220,7 @@ const Home = () => {
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
               Benefits of{' '}
-              <span className="bg-gradient-to-r from-primary-600 to-secondary-700 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                 Corporate Fitness
               </span>
             </h2>
@@ -243,7 +243,7 @@ const Home = () => {
                 whileHover={{ y: -10, scale: 1.02 }}
                 className="group p-8 rounded-2xl bg-gray-50 dark:bg-gray-800 hover:shadow-xl transition-all duration-500"
               >
-                <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-primary-600 to-secondary-700 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300">
                   <benefit.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">
@@ -259,7 +259,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary-600 to-secondary-700">
+      <section className="py-20 bg-gradient-to-r from-purple-600 to-pink-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -277,7 +277,7 @@ const Home = () => {
               <motion.button
                 whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(0, 0, 0, 0.3)" }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 text-lg font-semibold text-primary-600 bg-white rounded-full hover:shadow-2xl transition-all duration-500"
+                className="px-8 py-4 text-lg font-semibold text-purple-600 bg-white rounded-full hover:shadow-2xl transition-all duration-500"
               >
                 Start Your Journey Today
               </motion.button>

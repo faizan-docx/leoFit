@@ -9,7 +9,7 @@ const Programs = () => {
     {
       id: 1,
       title: 'CPR Certification',
-      description: 'Life-saving skills for your entire team. Comprehensive training in the cardiopulmonary resuscitation techniques.',
+      description: 'Life-saving skills for your entire team. Comprehensive training in cardiopulmonary resuscitation techniques.',
       longDescription: 'Our CPR Certification program provides comprehensive training in life-saving techniques. Participants learn proper chest compressions, rescue breathing, and how to use automated external defibrillators (AEDs). This program is essential for workplace safety and can potentially save lives in emergency situations.',
       icon: Heart,
       duration: '4 hours',
@@ -144,7 +144,7 @@ const Programs = () => {
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
             Corporate Wellness{' '}
-            <span className="bg-gradient-to-r from-primary-600 to-secondary-700 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
               Programs
             </span>
           </h1>
@@ -174,16 +174,16 @@ const Programs = () => {
             >
               <div className="relative h-full bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary-600/10 via-secondary-600/10 to-accent-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/10 via-pink-500/10 to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <div className="relative p-8 h-full flex flex-col">
                   {/* Icon */}
-                  <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-primary-600 to-secondary-700 rounded-full mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500">
+                  <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full mb-6 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500">
                     <program.icon className="w-8 h-8 text-white" />
                   </div>
                   
                   {/* Content */}
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300">
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors duration-300">
                     {program.title}
                   </h3>
                   
@@ -201,7 +201,7 @@ const Programs = () => {
                       <Users className="w-4 h-4 mr-2" />
                       <span className="text-sm">{program.participants}</span>
                     </div>
-                    <div className="text-lg font-semibold text-primary-600 dark:text-primary-400">
+                    <div className="text-lg font-semibold text-purple-600 dark:text-purple-400">
                       {program.price}
                     </div>
                   </div>
@@ -211,7 +211,7 @@ const Programs = () => {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => setSelectedProgram(program)}
-                    className="w-full py-3 bg-gradient-to-r from-primary-600 to-secondary-700 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-primary-500/25 transform hover:scale-105 transition-all duration-500 flex items-center justify-center group"
+                    className="w-full py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-purple-500/25 transform hover:scale-105 transition-all duration-500 flex items-center justify-center group"
                   >
                     Learn More
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
@@ -244,7 +244,7 @@ const Programs = () => {
               <div className="p-8">
                 <div className="flex justify-between items-start mb-6">
                   <div className="flex items-center">
-                    <div className="w-12 h-12 bg-gradient-to-r from-primary-600 to-secondary-700 rounded-full flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center mr-4">
                       <selectedProgram.icon className="w-6 h-6 text-white" />
                     </div>
                     <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
@@ -286,7 +286,7 @@ const Programs = () => {
                     <div className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-2">
                       Price
                     </div>
-                    <div className="text-lg font-semibold text-primary-600 dark:text-primary-400">
+                    <div className="text-lg font-semibold text-purple-600 dark:text-purple-400">
                       {selectedProgram.price}
                     </div>
                   </div>
@@ -298,10 +298,10 @@ const Programs = () => {
                   </h3>
                   <ul className="space-y-2">
                     {selectedProgram.features.map((feature, index) => (
-                                          <li key={index} className="flex items-center text-gray-600 dark:text-gray-300">
-                      <div className="w-2 h-2 bg-primary-600 rounded-full mr-3"></div>
-                      {feature}
-                    </li>
+                      <li key={index} className="flex items-center text-gray-600 dark:text-gray-300">
+                        <div className="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
+                        {feature}
+                      </li>
                     ))}
                   </ul>
                 </div>
@@ -310,7 +310,7 @@ const Programs = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex-1 py-3 bg-gradient-to-r from-primary-600 to-secondary-700 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-primary-500/25 transition-all duration-500"
+                    className="flex-1 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-500"
                   >
                     Book This Program
                   </motion.button>
