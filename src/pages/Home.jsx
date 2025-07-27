@@ -292,10 +292,10 @@ const Home = () => {
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-sm font-medium text-gray-900 dark:text-white">
-                    Raj, Your Trainer
+                    Rahul, Your Trainer
                   </p>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                    Hi there! I'm Raj, your corporate wellness trainer. Let me help you create a healthier workplace!
+                    Hi there! I'm Rahul, your corporate wellness trainer. Let me help you create a healthier workplace!
                   </p>
                   <div className="mt-3">
                     <button
