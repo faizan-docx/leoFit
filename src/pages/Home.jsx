@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { ArrowRight, Heart, Users, TrendingUp, Shield, Zap, Award } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowRight, Heart, Users, TrendingUp, Shield, Zap, Award, X } from 'lucide-react';
 
 const Home = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
+
   const benefits = [
     {
       icon: Heart,
@@ -256,6 +265,52 @@ const Home = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* Trainer Popup */}
+      <AnimatePresence>
+        {showPopup && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.8, y: 20 }}
+            transition={{ type: "spring", damping: 20, stiffness: 300 }}
+            className="fixed bottom-6 right-6 z-50"
+          >
+            <div className="relative bg-white dark:bg-gray-800 rounded-xl shadow-xl p-6 max-w-xs md:max-w-sm border border-gray-200 dark:border-gray-700">
+              <button 
+                onClick={() => setShowPopup(false)}
+                className="absolute top-2 right-2 p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700"
+              >
+                <X className="w-5 h-5 text-gray-500 dark:text-gray-400" />
+              </button>
+              
+              <div className="flex items-start space-x-3">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center text-white font-bold">
+                    R
+                  </div>
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm font-medium text-gray-900 dark:text-white">
+                    Raj, Your Trainer
+                  </p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                    Hi there! I'm Raj, your corporate wellness trainer. Let me help you create a healthier workplace!
+                  </p>
+                  <div className="mt-3">
+                    <button
+                      onClick={() => setShowPopup(false)}
+                      className="inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-full shadow-sm text-white bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 focus:outline-none"
+                    >
+                      Got it!
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

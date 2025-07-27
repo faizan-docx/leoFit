@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Sun, Moon } from 'lucide-react';
-import { useDarkMode } from '../contexts/DarkModeContext';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { isDarkMode, toggleDarkMode } = useDarkMode();
   const location = useLocation();
 
   useEffect(() => {
@@ -51,8 +49,8 @@ const Navbar = () => {
       animate="animate"
       className={`fixed top-0 w-full z-50 transition-all duration-500 ${
         isScrolled 
-          ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg py-2' 
-          : 'bg-transparent py-4'
+          ? 'bg-[#101828]/95 backdrop-blur-md shadow-lg py-2' 
+          : 'bg-[#101828] py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -75,8 +73,8 @@ const Navbar = () => {
                 to={item.path}
                 className={`relative font-medium transition-all duration-300 hover:scale-105 ${
                   location.pathname === item.path
-                    ? 'text-purple-600 dark:text-purple-400'
-                    : 'text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400'
+                    ? 'text-white'
+                    : 'text-gray-300 hover:text-white'
                 }`}
               >
                 {item.label}
@@ -92,32 +90,15 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Right side buttons */}
-          <div className="flex items-center space-x-4">
-            {/* Dark mode toggle */}
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={toggleDarkMode}
-              className={`p-2 rounded-full transition-all duration-300 ${
-                isDarkMode 
-                  ? 'bg-yellow-400 text-gray-900' 
-                  : 'bg-gray-700 text-yellow-400'
-              }`}
-            >
-              {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-            </motion.button>
-
-            {/* Mobile menu button */}
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 text-gray-700 dark:text-gray-300"
-            >
-              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </motion.button>
-          </div>
+          {/* Mobile menu button */}
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden p-2 text-gray-300 hover:text-white"
+          >
+            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </motion.button>
         </div>
       </div>
 
@@ -128,7 +109,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white dark:bg-gray-900 shadow-lg"
+            className="md:hidden bg-[#101828] shadow-lg"
           >
             <div className="px-4 py-2 space-y-1">
               {navItems.map((item, i) => (
@@ -145,8 +126,8 @@ const Navbar = () => {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={`block px-3 py-2 rounded-lg transition-all duration-300 ${
                       location.pathname === item.path
-                        ? 'text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/20'
-                        : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
+                        ? 'text-white bg-[#1D2939]'
+                        : 'text-gray-300 hover:bg-[#1D2939] hover:text-white'
                     }`}
                   >
                     {item.label}
@@ -161,4 +142,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;
