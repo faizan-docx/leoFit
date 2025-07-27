@@ -295,7 +295,7 @@ const Home = () => {
                     Rahul, Your Trainer
                   </p>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                    Hi there! I'm Rahul, your corporate wellness trainer. Let me help you create a healthier workplace!
+                    Hi there! I'm Rahul, your corporate wellness trainer. Let me help you create a healthier workplace!!!
                   </p>
                   <div className="mt-3">
                     <button
